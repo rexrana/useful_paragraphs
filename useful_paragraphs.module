@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the Useful Paragraphs feature.
+ */
+
+include_once 'useful_paragraphs.features.inc';
