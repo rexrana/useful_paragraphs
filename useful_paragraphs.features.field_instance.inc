@@ -248,6 +248,76 @@ function useful_paragraphs_field_default_field_instances() {
     ),
   );
 
+  // Exported field_instance: 'paragraphs_item-hero-field_background_image'
+  $field_instances['paragraphs_item-hero-field_background_image'] = array(
+    'bundle' => 'hero',
+    'deleted' => 0,
+    'description' => '',
+    'display' => array(
+      'default' => array(
+        'label' => 'hidden',
+        'module' => 'picture',
+        'settings' => array(
+          'colorbox_settings' => array(
+            'colorbox_caption' => 'auto',
+            'colorbox_caption_custom' => '',
+            'colorbox_gallery' => 'post',
+            'colorbox_gallery_custom' => '',
+            'colorbox_group' => '',
+            'colorbox_multivalue_index' => NULL,
+          ),
+          'fallback_image_style' => 'scale_width_0320',
+          'image_link' => '',
+          'picture_mapping' => 'hero_background',
+        ),
+        'type' => 'picture',
+        'weight' => 5,
+      ),
+      'paragraphs_editor_preview' => array(
+        'label' => 'above',
+        'settings' => array(),
+        'type' => 'hidden',
+        'weight' => 0,
+      ),
+    ),
+    'ds_extras_field_template' => '',
+    'entity_type' => 'paragraphs_item',
+    'fences_wrapper' => 'div',
+    'field_name' => 'field_background_image',
+    'label' => 'Background Image',
+    'required' => 0,
+    'settings' => array(
+      'alt_field' => 0,
+      'default_image' => 0,
+      'file_directory' => '',
+      'file_extensions' => 'png gif jpg jpeg',
+      'max_filesize' => '',
+      'max_resolution' => '',
+      'min_resolution' => '',
+      'title_field' => 0,
+      'user_register_form' => FALSE,
+    ),
+    'widget' => array(
+      'active' => 1,
+      'module' => 'media',
+      'settings' => array(
+        'allowed_schemes' => array(
+          'oembed' => 0,
+          'public' => 'public',
+        ),
+        'allowed_types' => array(
+          'audio' => 0,
+          'default' => 0,
+          'image' => 'image',
+          'video' => 0,
+        ),
+        'progress_indicator' => 'throbber',
+      ),
+      'type' => 'media_generic',
+      'weight' => 5,
+    ),
+  );
+
   // Exported field_instance: 'paragraphs_item-hero-field_call_to_action'
   $field_instances['paragraphs_item-hero-field_call_to_action'] = array(
     'bundle' => 'hero',
@@ -378,7 +448,7 @@ function useful_paragraphs_field_default_field_instances() {
   $field_instances['paragraphs_item-hero-field_image'] = array(
     'bundle' => 'hero',
     'deleted' => 0,
-    'description' => '',
+    'description' => 'The <em>foreground image</em> will appear above the headline.',
     'display' => array(
       'default' => array(
         'label' => 'hidden',
@@ -392,9 +462,9 @@ function useful_paragraphs_field_default_field_instances() {
             'colorbox_group' => '',
             'colorbox_multivalue_index' => NULL,
           ),
-          'fallback_image_style' => 'scale_width_0320',
+          'fallback_image_style' => '',
           'image_link' => '',
-          'picture_mapping' => 'hero_background',
+          'picture_mapping' => 'inline',
         ),
         'type' => 'picture',
         'weight' => 0,
@@ -410,7 +480,7 @@ function useful_paragraphs_field_default_field_instances() {
     'entity_type' => 'paragraphs_item',
     'fences_wrapper' => 'div',
     'field_name' => 'field_image',
-    'label' => 'Background Image',
+    'label' => 'Foreground Image',
     'required' => 0,
     'settings' => array(
       'alt_field' => 0,
@@ -745,11 +815,13 @@ function useful_paragraphs_field_default_field_instances() {
   t('Cite the author of the quote, and optionally add a link to the source');
   t('Code Block');
   t('File');
+  t('Foreground Image');
   t('Headline');
   t('Link');
   t('Media');
   t('Quote');
   t('Text');
+  t('The <em>foreground image</em> will appear above the headline.');
   t('Title');
   t('add optional css classes to the hero\'s <pre><figure></pre> tag.');
 
