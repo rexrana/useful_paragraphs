@@ -1,5 +1,5 @@
-# useful_paragraphs
-A useful set of paragraph bundles for the Drupal Paragraphs module.
+# Useful Paragraphs
+A useful set of paragraph bundles for the Drupal Paragraphs module. Written for Drupal 7.
 
 ### Code Snippet
 * Code Block - a geshifield instance to display code
